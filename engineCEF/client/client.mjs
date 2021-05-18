@@ -38,7 +38,6 @@ function Start() {
             alt.showCursor(true)
             alt.setCamFrozen(true)
             native.freezeEntityPosition(vehicle, true)
-            player.startScreenEffect("BeastLaunch", 0, true)
         }
         webview.on('upgradeEngine:Wait', (data) => {alt.emitServer('upgradeEngine:Install', data)})
     }, 100)
